@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import LoginForm from './components/LoginForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Profile from './components/Profile';
+import Marks from './components/marks';
+import { useState } from "react";
 
 function App() {
+  const[appear,setAppear]=useState(false)
+
+  const logout=()=>{setAppear(false)}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header butt={appear} onLogOut={logout}/>
+    {!appear && <LoginForm onSuccess={()=>setAppear(true)}/>}
+    {appear && <Profile/>}
+    {appear && <Marks/>}
+    </>
   );
 }
 

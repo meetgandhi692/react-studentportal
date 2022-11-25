@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "Subject": "Applied Maths",
+    "Marks": "67"
+  },
+  {
+    "id": 2,
+    "Subject": "Theory of Computation",
+    "Marks": "52"
+  },
+  {
+    "id": 3,
+    "Subject": "Operating Systems",
+    "Marks": "84"
+  },
+  {
+    "id": 4,
+    "Subject": "Database Engineering",
+    "Marks": "67"
+  },
+  {
+    "id": 5,
+    "Subject": "Computer Network",
+    "Marks": "75"
+  },
+  {
+    "id": 6,
+    "Subject": "Average",
+    "Marks": "70%"
+  }
+]
